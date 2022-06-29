@@ -1,0 +1,92 @@
+ @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+  .header-section {
+    max-width: 100%;
+    background: linear-gradient(to right, #4c1d95 30%, #8b5cf6);
+    color: white;
+    line-height: 1.5;
+    height: 10%;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  @media (min-width: 600px) {
+    .header-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .about-us {
+      padding: 3vw 0 3vh 3vw;
+    }
+  
+    .image-wrapper {
+      filter: hue-rotate(20deg);
+     clip-path: polygon(0% 100%, 35% 0%, 100% 0%, 100% 100%);
+    }
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .header-title{
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 100px;
+   margin-top: -15%;
+   color:rgb(28, 213, 226);
+    white-space: nowrap;
+  }
+  .about-us > h2 {
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: -5%;
+    color:lightpink;
+    font-size: 100px;
+    margin-bottom: 0.5rem;
+    font-family: 'Dancing Script', cursive;
+  }
+  .about-us > p {
+    font-size: 30px;
+    margin-left: 3%;
+  }
+  
+  .image-wrapper > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+  .divider {
+    font-style: italic;
+    display: flex;
+  }
+  .divider:before, .divider:after {
+    content: "";
+    flex: 1;
+  }
+  
+  .line {
+    align-items: center;
+    margin: 1em 0;
+  }
+  .line:before, .line:after {
+    /* height: 5px; */
+    margin: 0 0.5em;
+  }
+
+  .glow:before, .glow:after {
+    height: 15px;
+    --webkit-filter: blur(5px);
+    border-radius: 5px;
+  }
+  .glow:before {
+    background: linear-gradient(to right, blue, hotpink);
+  }
+  .glow:after {
+    background: linear-gradient(to left, blue, hotpink);
+  }
+  
